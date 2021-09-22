@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Disney;
+    src: url('fonts/Disney/waltographUI.ttf');
+  }
+
+@font-face {
+    font-family: Disney2;
+    src: url(fonts/Disney/waltograph42.otf);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-family: Disney;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-family: Disney2;
+    font-size: 35px;
+}
+
+.ppt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ppt ul {
+    width: 330px;
+    height: 330px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ppt ul li {
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ppt ul li img{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    /* border: 3px solid red; */
+
+}
+.mickey {
+    width: 10%;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
