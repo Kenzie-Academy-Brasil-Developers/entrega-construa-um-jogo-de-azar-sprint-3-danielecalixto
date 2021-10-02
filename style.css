@@ -1,27 +1,27 @@
 @font-face {
     font-family: Disney;
-    src: url('fonts/Disney/waltographUI.ttf');
+    src: url(./fonts/Disney/waltographUI.ttf);
   }
 
 @font-face {
     font-family: Disney2;
-    src: url(fonts/Disney/waltograph42.otf);
+    src: url(./fonts/Disney/waltograph42.otf);
 }
 
 h1 {
     width: 100%;
     text-align: center;
     font-family: Disney;
-    font-size: 35px;
+    font-size: 90px;
     margin-top: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-h2 {
+p {
     width: 100%;
     text-align: center;
     font-family: Disney2;
-    font-size: 35px;
+    font-size: 80px;
 }
 
 .ppt {
@@ -32,8 +32,8 @@ h2 {
     align-items: center;
 }
 .ppt ul {
-    width: 330px;
-    height: 330px;
+    width: 600px;
+    height: 600px;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -45,22 +45,78 @@ h2 {
 }
 
 .ppt ul li {
-    width: 130px;
-    height: 130px;
+    width: 250px;
+    height: 250px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.ppt ul li button {
+    background: none;
+    border: none;
+}
+
 .ppt ul li img{
     border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    /* border: 3px solid red; */
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
 
 }
-.mickey {
-    width: 10%;
-    height: auto;
-    margin-left: 40px;
-    margin-right: 40px;
+
+.ppt ul li img:hover {
+    border: 3px solid red;
+}
+
+.mickey{
+    width:120px;
+    height: 180px;
+}
+
+td {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+table {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    font-family: Disney2;
+    font-size: 80px;
+}
+
+tr {
+    display: flex;
+    width: 600px;
+    height: 200px;
+    border-bottom: 3px solid red;
+}
+
+.otherfont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 350px) {
+    
 }

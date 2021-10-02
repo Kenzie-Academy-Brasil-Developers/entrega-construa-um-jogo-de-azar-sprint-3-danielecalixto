@@ -9,18 +9,31 @@
 <body>
     <h1>Mickey's jokenpô</h1>
     <div class="ppt">
-        
-        <img class="mickey" src="img/mickey.png" alt="Mickey">
         <ul>
-            <li><img src="img/tesoura.png" alt="Tesoura"></li>
-            <li><img src="img/pedra.png" alt="Pedra"></li>
-            <li><img src="img/papel.png" alt="Papel"></li>
+            <li><button id="scissors"><img src="img/tesoura.png" alt="Tesoura"></li></button>
+            <li><button id="rock"><img src="img/pedra.png" alt="Tesoura"></li></button>
+            <li><button id="paper"><img src="img/papel.png" alt="Tesoura"></li></button>
         </ul>
-        <img class="mickey" src="img/mickey2.png" alt="Mickey">
-    </div>
-    <div>
-        <h2>rock, paper or scissors?</h2>
         
     </div>
+    <p>pedra, papel ou tesoura?</p>
+    <table>
+        <tr>
+            <td></td>
+            <td><img id="mickey" class="mickey" src="img/mickey2.png" alt="Mickey"></td>
+            <td><p id="you">você</p></td>
+        </tr>
+        <tr id="choicepoints">
+            <td><p>partida</p></td>
+            <td><p class="otherfont" id="choicemickey"></p></td>
+            <td><p class="otherfont" id="choicegamer"></p></td>
+        </tr>
+        <tr id="choicepoints">
+            <td><p>pontos</p></td>
+            <td><p class="otherfont" id="pointsmickey"></p></td>
+            <td><p class="otherfont" id="pointsgamer"></p></td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
