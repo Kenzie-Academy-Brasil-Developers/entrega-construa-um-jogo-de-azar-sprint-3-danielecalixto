@@ -18,22 +18,19 @@ function mickeyRandom(){
     if (mickeyNumber == 1) mickey = "rock";
     else if (mickeyNumber == 2) mickey = "paper";
     else if (mickeyNumber == 3) mickey = "scissors";
-    console.log(mickey);
     return mickey;
 }
 
 function portugues(mickey, gamer) {
-    if (mickey="rock") mickeyPort="PEDRA";
-    else if (mickey="paper") mickeyPort="PAPEL";
-    else if (mickey="scissors") mickeyPort="TESOURA";
-    if (gamer="rock") gamerPort="PEDRA";
-    else if (gamer="paper") gamerPort="PAPEL";
-    else if (gamer="scissors") gamerPort="TESOURA";
+    if (mickey == "rock") mickeyPort="PEDRA";
+    else if (mickey == "paper") mickeyPort="PAPEL";
+    else if (mickey == "scissors") mickeyPort="TESOURA";
+    if (gamer == "rock") gamerPort="PEDRA";
+    else if (gamer == "paper") gamerPort="PAPEL";
+    else if (gamer == "scissors") gamerPort="TESOURA";
 }
 
 function matchWinner(mickey, gamer){
-    console.log(gamer);
-    console.log(mickey);
     if (mickey=="rock" && gamer=="scissors") winner = "mickey";
     else if (mickey=="rock" && gamer=="paper") winner = "gamer";
     else if (mickey=="rock" && gamer=="rock") winner = "tie";
@@ -43,28 +40,34 @@ function matchWinner(mickey, gamer){
     else if (mickey=="scissors" && gamer=="scissors") winner = "tie";
     else if (mickey=="scissors" && gamer=="paper") winner = "mickey";
     else if (mickey=="scissors" && gamer=="rock") winner = "gamer";
-    console.log(winner);
-    if (winner="gamer") {
+    console.log("winner " + winner);
+    console.log(document.getElementById("you"));
+    console.log(document.getElementById("mickey"));
+    if (winner == "gamer") {
         pointsGamer++;
         document.getElementById("you").style.borderColor = "red";
         document.getElementById("mickey").style.borderColor = "white";
-    } else if (winner="mickey") {
+    } else if (winner == "mickey") {
         pointsMickey++;
         document.getElementById("you").style.borderColor = "white";
         document.getElementById("mickey").style.borderColor = "red";
+    } else if (winner == "tie") {
+        document.getElementById("you").style.borderColor = "red";
+        document.getElementById("mickey").style.borderColor = "red";
     }
+    console.log("pointsGamer " + pointsGamer);
+    console.log("pointsMickey " + pointsMickey);
 }
 
 const rock = document.getElementById("rock");
-console.log(rock);
 const paper = document.getElementById("paper");
-console.log(paper);
 const scissors = document.getElementById("scissors");
-console.log(scissors);
 
 rock.addEventListener('click', function(){
     gamer = "rock";
     mickey = mickeyRandom();
+    console.log("mickey click " + mickey);
+    console.log("gamer click " + gamer);
     matchWinner(mickey, gamer);
     portugues(mickey, gamer);
     document.getElementById("choicegamer").innerHTML = gamerPort;
@@ -74,12 +77,12 @@ rock.addEventListener('click', function(){
 });
 
 paper.addEventListener('click', function(){
-    console.log("teste click papel");
     gamer = "paper";
     mickey = mickeyRandom();
+    console.log("mickey click " + mickey);
+    console.log("gamer click " + gamer);
     matchWinner(mickey, gamer);
     portugues(mickey, gamer);
-    winner
     document.getElementById("choicegamer").innerHTML = gamerPort;
     document.getElementById("choicemickey").innerHTML = mickeyPort;
     document.getElementById("pointsgamer").innerHTML = pointsGamer;
@@ -87,10 +90,10 @@ paper.addEventListener('click', function(){
 });
 
 scissors.addEventListener('click', function(){
-    console.log("teste click tesoura");
     gamer = "scissors";
-    console.log(gamer);
     mickey = mickeyRandom();
+    console.log("mickey click " + mickey);
+    console.log("gamer click " + gamer);
     matchWinner(mickey, gamer);
     portugues(mickey, gamer);
     document.getElementById("choicegamer").innerHTML = gamerPort;

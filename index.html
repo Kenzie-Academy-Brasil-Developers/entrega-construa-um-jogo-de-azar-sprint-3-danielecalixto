@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
     <meta charset='UTF-8'>
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <tittle>Pedra, Papel e Tesoura</tittle>
 </head>
 <body>
+    <section id="tittleppt">
     <h1>Mickey's jokenpô</h1>
     <div class="ppt">
         <ul>
@@ -16,12 +17,14 @@
         </ul>
         
     </div>
+    </section>
+    <section id="questiontable">
     <p>pedra, papel ou tesoura?</p>
     <table>
         <tr>
             <td></td>
-            <td><img id="mickey" class="mickey" src="img/mickey2.png" alt="Mickey"></td>
-            <td><p id="you">você</p></td>
+            <td id="mickey" ><img class="mickey" src="img/mickey2.png" alt="Mickey"></td>
+            <td id="you"><p id="youp">você</p></td>
         </tr>
         <tr id="choicepoints">
             <td><p>partida</p></td>
@@ -34,6 +37,7 @@
             <td><p class="otherfont" id="pointsgamer"></p></td>
         </tr>
     </table>
+</section>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

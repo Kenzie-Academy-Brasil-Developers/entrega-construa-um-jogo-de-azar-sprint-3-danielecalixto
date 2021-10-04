@@ -7,7 +7,12 @@
     font-family: Disney2;
     src: url(./fonts/Disney/waltograph42.otf);
 }
-
+ * {
+    background-color: #FFFF00;
+ }
+title {
+    display: none;
+}
 h1 {
     width: 100%;
     text-align: center;
@@ -15,6 +20,7 @@ h1 {
     font-size: 90px;
     margin-top: 20px;
     margin-bottom: 30px;
+    color:red;
 }
 
 p {
@@ -22,6 +28,7 @@ p {
     text-align: center;
     font-family: Disney2;
     font-size: 80px;
+    
 }
 
 .ppt {
@@ -58,19 +65,19 @@ p {
 
 .ppt ul li img{
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    border: 3px solid black;
-
+    width: 240px;
+    height: 240px;
+    border: 5px solid black;
 }
 
 .ppt ul li img:hover {
-    border: 3px solid red;
+    border: 6px solid red;
 }
 
 .mickey{
-    width:120px;
+    width:140px;
     height: 180px;
+    border-radius: 50%;
 }
 
 td {
@@ -80,10 +87,10 @@ td {
     align-content: center;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 50%;
     border-width: 3px;
     border-style: solid;
-    border-color: white;
+    border-color: #FFFF00;
 }
 
 table {
@@ -102,7 +109,7 @@ tr {
     display: flex;
     width: 600px;
     height: 200px;
-    border-bottom: 3px solid red;
+    border-bottom: 5px solid red;
 }
 
 .otherfont {
@@ -117,6 +124,26 @@ body {
     align-items: center;
 }
 
-@media (min-width: 350px) {
-    
+#mickey {
+    background-color: white;
+}
+
+#you {
+    background-color: white;
+}
+
+#youp {
+    width: 178px;
+    background-color: white;
+
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+    body {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
